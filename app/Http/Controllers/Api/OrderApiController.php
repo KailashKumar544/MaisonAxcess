@@ -119,10 +119,10 @@ class OrderApiController extends Controller
             $order_id = $order->id;
 
             // Charge the customer using Stripe API
-            $stripe_secret_key = '';
+            $stripe_secret_key = 'stripe_kew';
             \Stripe\Stripe::setApiKey($stripe_secret_key);
         
-            $stripe = new \Stripe\StripeClient('');
+            $stripe = new \Stripe\StripeClient('stripe_kew');
             try {
                 $stripeToken = strval($request->input('stripeToken'));
                 $customer = $stripe->customers->create([
