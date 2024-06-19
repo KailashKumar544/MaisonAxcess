@@ -1,0 +1,993 @@
+  header ul.top-right svg {
+    height: 28px;
+    margin: 0px;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+header {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+header .container img.site-logo {
+    width: 240px;
+    max-width: 150px;
+    padding: 15px 0px;
+}
+.container {
+    max-width: 1280px;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+header .container {
+    display: grid;
+    grid-template-columns: 25% 73%;
+    gap: 2%;
+    align-items: center;
+}
+header .container ul.top-right {
+    padding: 0px 0px;
+    margin: 0;
+    list-style: none;
+    text-align: right;
+}
+header .container ul.top-right li {
+    display: inline-block;
+    padding: 0px 10px;
+    text-align: center;
+}
+header .container ul.top-right li a img {
+    text-align: center;
+    margin: 0 auto;
+    width: 18px;
+}
+header .main-nav {
+    display: block;   
+}
+header .container ul.top-right li a {
+    text-decoration: none;
+    color: #11696a;
+    font-size: 14px;
+    font-weight: 600;
+	text-align:center;
+	    padding-left: 0px;
+    padding-right: 0px;
+}
+.main-content {
+    background: #f3f3f3;
+}
+.main-nav ul {
+    list-style: none;
+    padding: 0px;
+text-align:center;
+    margin: 0px;
+}
+.main-nav ul li {
+    display: inline-block;
+}
+.main-nav ul li a {
+font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 10px;
+    display: inline-block;
+    color: #11696a;
+    font-size: 14px;}
+.main-nav {
+    border-top: 1px solid #ddd;
+    display: inline-block;
+    width: 100%;
+}
+.main-nav ul li a:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+.hero-slider img {
+    width: 100%;
+}
+.footer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: #11696a;
+}
+.footer p {
+    color: #fff;
+}
+.welcome-section .container {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    align-items: center;
+    justify-items: center;
+    gap: 4%;
+    margin: 80px auto;
+}
+.welcome-section .container .box {
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #e4e9ec;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 212px 212px;
+    position: relative;
+    height: 540px;
+}
+.welcome-section .box h3 {
+    color: #564963;
+}
+.service-box1.box {
+    background-image: url(https://maisonaxcess.com/uploads/clock.png);
+}
+.service-box2.box {
+ background-image: url(https://maisonaxcess.com/uploads/bell.png);
+}
+.services-logo img {
+    max-width: 120px;
+    width: 100%;
+}
+.number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+	margin-bottom: 20px;
+}
+.number a {
+    color: #564963;
+    font-size: 14px;
+}
+.number svg {
+    fill: #564963;
+    font-size: 14px;
+}
+.address {
+    font-size: 14px;
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+	padding-bottom: 2em;
+	color: #929494;
+}
+.services-logo {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.service-client {
+    font-size: 14px;
+    color: #929494;
+}
+.service-two-massage {
+    color: #929494;
+    font-size: 14px;
+    padding-top: 10em;
+}
+
+@media screen and (max-width: 600px) {
+.welcome-section .container {
+    display: block;    
+}
+.service-box1.box {
+    
+    margin-bottom: 2em;
+}
+.address {
+    
+    width: 60%;
+   
+}
+}
+@media screen and (max-width: 980px) {
+.address {
+    
+    width: 60%;
+   
+}
+}
+
+#servicesModal, .cat_modal{
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+   #servicesModal .modal-content, .cat_modal .modal-content{
+        background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 550px;
+    border-radius: 4px;
+    }
+    #servicesModal h2, .cat_modal h2 {
+        border-bottom: 1px solid #0e3f407a;
+        padding-bottom: 10px;
+        margin-top: 0;
+    }
+
+    /* Close Button */
+    #servicesModal .close, .cat_modal .close {
+        color: #fff;
+        float: right;
+        font-size: 16px;
+        font-weight: bold;
+        border: 1px solid;
+        padding: 6px;
+        background: #11696a;
+    }
+
+   #servicesModal .close:hover,
+   #servicesModal .close:focus, .cat_modal .close:hover,
+   .cat_modal .close:focus {
+        color: rgb(255, 254, 254);
+        text-decoration: none;
+        cursor: pointer;
+    }
+	
+	.categories-box {
+       display: flex;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1280px;
+    flex-wrap: wrap;
+    justify-content: center;
+	padding: 3em 0em;
+}
+.categories-box div {
+    height: 240px;
+    max-height: 230px;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 32%;
+    position: relative;
+}
+div#categories-sec {
+    background: #d9eaea8c;
+    padding-bottom: 20px;
+    
+}
+
+.categories-box div a {
+    text-decoration: none;
+}
+.categories-box div a {
+    text-decoration: auto;
+    color: #564963;
+    z-index: 9;;
+}
+.single-categories {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+	position:relative;
+}
+
+.single-categories1 img {
+    height: 230px;
+    max-height: 230px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    object-fit: cover;
+}
+.single-categories h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: capitalize;
+    z-index: 9;
+}
+.user-sec {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 720px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 3em;
+}
+.user-data img {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    
+}
+.user-data {
+        background: #fff;
+    border-radius: 4px;
+    padding: 10px;
+	    transition: all .8s ease;
+        display: grid;
+    grid-template-columns: 28% 72%;
+    align-items: center;
+}
+.user-data:hover {
+    background: #dfdfdf;
+}
+.user-data p {
+    text-align: left;
+    color: #000;
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0px;
+}
+
+.user-data h2 {
+    text-align: center;
+    color: #116969;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+.services-sec {
+    background: #d9eaea8c;
+    padding: 3em 0px;
+}
+.services-detial {
+   display: flex;
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 40px;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 4px;
+}
+.services-detial .img-client img {
+    width: 100%;
+    max-width: 380px;
+}
+.despti h1 {
+    color: #116969;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 26px;
+}
+button#addServicesBtn, button#book_appointment {
+    color: #FFFFFF !important;
+    border-color: #116969;
+    font-size: 18px;
+    background-color: #116969;
+    border: 0px;
+    padding: 12px 36px;
+    border-radius: 4px;
+	    cursor: pointer;
+}
+button#addServicesBtn:hover {
+    background: #116969ba;
+}
+
+button.enableDisableBtn {
+    padding: 10px 30px;
+    border: 0px;
+    background: #116969;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+#servicesModal .modal-content ul, .cat_modal .modal-content ul {
+    list-style: none;
+    padding: 0px;
+}
+.categories-box div a h2 {
+    color: #fff;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #116969;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #116969;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.cat_modal table{
+width:100%;
+}
+#servicesModal li, .cat_modal li, .cat_modal  tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+    align-items: center;
+    border-bottom: 1px solid #eae5e5;
+    margin-bottom: 10px;
+}
+#servicesModal li:last-child, .cat_modal li:last-child, .cat_modal  tbody tr:last-child{border: none;}
+.w-full.sm\:max-w-md.mt-6.px-6.py-4.bg-white.dark\:bg-gray-800.shadow-md.overflow-hidden.sm\:rounded-lg {
+    max-width: 700px;
+}
+input#profile_photo {
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0%);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-sm {
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    border: 1px rgb(209 213 219) solid;
+    padding: .5rem .75rem;
+}
+.colum-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+}
+.w-full div label.block {
+    font-size: 16px;
+    padding-bottom: 6px;
+    color: #11696b;
+}
+.w-full div input {
+    border-color: #11696b;
+}
+.w-full .mt-4 select {
+    border-color: #11696b;
+	    color: #11696b;
+}
+.btn-register {
+    background: #11696b !important;
+    padding: 12px 25px !important;
+}
+.colum-grid-login {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.colm-set {
+    width: 50%;
+}
+.services-sec.services-form .services-detial {
+    display: block;
+  
+}
+.services-sec.services-form .img-client img {
+    max-width: 100%;
+	
+    
+}
+.services-sec.services-form button#addServicesBtn {
+    background: transparent;
+    color: #116969 !important;
+    padding: 0px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 700;
+	 text-decoration: underline;
+}
+.address-grid-box {
+    gap: 3%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.address-grid-box div, .payment_method {
+    
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    gap: 6px;
+}
+.single-categories1 {
+    max-width: 720px;
+    margin: auto;
+    width: 80%;
+}
+.services-sec.services-form .address_section textarea {
+    width: 100%;
+	padding: 10px;
+    border: 1px #cccccc solid;
+    border-radius: 4px;
+	box-sizing: border-box;
+}
+.services-sec.services-form .address_section input {
+    
+    padding: 10px;
+    border: 1px #cccccc solid;
+    border-radius: 4px;
+	box-sizing: border-box;
+}
+.address-grid div {
+    display: grid;
+    gap: 6px;
+    padding-bottom: 10px;
+}
+
+div#selectedServices ul {
+      padding: 0px;
+    list-style: none;
+    margin: 0px;
+    border-bottom: 1px #ccc solid;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.popular_categories {
+    width: 80%;
+    max-width: 720px;
+    background: white;
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, .1);
+
+}
+
+.popular_categories h2, .popular_categories a {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.popular_categories h2 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 400;
+}
+.popular_categories a {
+    color: #116969;
+    cursor: pointer;
+    font-weight: 800;
+}
+.cat_service_dtls{
+    background: #f4f4f4;
+   
+}
+.cat_service_dtls button, .cat_service_dtls a {
+    padding: 15px 20px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #d9d9d9;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+}
+.cat_service_dtls button:hover, .cat_service_dtls a:hover {
+    background: #e3e3e3;
+}
+.popular_categories .modal-content h2 {
+    display: block;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+/* div#selectedServices ul:last-child {
+    border-bottom: 0px;
+} */
+#orderTotal{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    font-weight: 700;
+float:right;
+}
+.appintment_section {
+    padding-top: 20px;
+}
+.appintment_section input#appointment_date {
+    padding: 10px;
+    border: 1px #cccccc solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 6px;
+}
+button#book_appointment {
+    
+    display: block;
+	    margin: 0 auto;
+
+}
+.payment_method {
+    padding: 20px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+#card-element {
+    padding: 10px;
+}
+/*---plus---*/
+
+  .quantityInput::-webkit-inner-spin-button,
+  .quantityInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .quantity-container li {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+  .quantityInput {
+    width: 50px;
+  }
+  .quantity-control {
+    display: flex;
+    margin-left: 0px;
+}
+  .quantity-control button {
+        border: none;
+    cursor: pointer;
+    background: #aaa;
+    font-size: 22px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+  }
+  button.increment {
+    border-radius: 0px 5px 5px 0px;
+}
+button.decrement {
+    border-radius: 5px 0px 0px 5px;
+}
+  .quantityInput {
+    height: 33px;
+    vertical-align: top;
+    padding: 2px 5px 0 5px;
+    border: 0;
+    box-shadow: inset 2px 2px 15px rgba(0, 0, 0, .2);
+    width: 35px;
+    border-radius: 0;
+    font-size: 16px;
+    text-align: center;
+}
+.title-quantity {
+    width: 100%;
+}
+.order-box-service .order-data {
+    padding: 25px;
+}
+table.table-set {
+    border-collapse: collapse;
+    width: 100%;
+}
+tr.title-order-set th {
+    text-align: left;
+    padding: 8px;
+}
+table.table-set tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+table.table-set tr td {
+    padding: 8px;
+    border: 1px solid #f8f8f8;
+	    font-size: 12px;
+}
+td.id-set {
+    font-weight: bold;
+    font-size: 13px !important;
+}
+td.order-view-btn {
+    color: #11696a;
+    font-weight: bold;
+    font-size: 13px !important;
+}
+.hidden.space-x-8.sm\:-my-px.sm\:ms-10.sm\:flex {
+    margin-left: 0px;
+}
+table.order-details {
+    width: 100%;
+}
+.detail-set-div {
+    padding: 25px;
+}
+table.order-details td table {
+    width: 100%;
+}
+table.order-details td {
+    padding: 8px;
+    border: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+table.order-details td table td {
+    padding: 8px;
+}
+table.order-details td.order-detils-tit {
+    font-size: 14px;
+    font-weight: 900;
+}
+tr.iner-detils td {
+    color: #000;
+    font-weight: bold;
+}
+div#contact-section {
+    background: #f3f3f3;
+    padding: 3em 0em;
+}
+.contact-form {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.contact-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.form-group label {
+    display: block;
+    padding: 10px 0px;
+}
+textarea#message {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px #cccccc solid;
+}
+.form-group {
+    padding-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px #cccccc solid;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+button.btn.btn-primary {
+    color: #FFFFFF !important;
+    border: 1px #116969 solid;
+    font-size: 18px;
+    background-color: #116969;
+    padding: 12px 36px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: all .8s ease;
+}
+button.btn.btn-primary:hover {
+    background-color: transparent;
+    color: #116969 !important;
+}
+/*-------------------QUI SOMMES NOUS ----------------*/
+.title-head {
+    background: url(https://maisonaxcess.com/uploads/_service_.png);
+    padding: 70px 10px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+ .title-head.CHEFMAISON{
+    background: url(/uploads/chefmain.jpeg);
+    padding: 70px 10px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 90%;
+    min-height: 100px;
+}
+.categories-box.chef div:before {
+    content: '';
+    background: #0606069c;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 000;
+}
+.title-head h1 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+.title-head.CHEFMAISON h1{display: none;}
+.body-content {
+    margin: 40px 0px;
+}
+.body-content p {
+    text-align: center;
+    line-height: 22px;
+}
+.about-boxs {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+    align-items: center;
+    justify-items: center;
+}
+.about-boxs .box {
+    background: #e4e9ec;
+    padding: 0px 20px;
+    height: 100%;
+    border-radius: 8px;
+    padding-top: 40px;
+    padding-bottom: 0px;
+}.about-boxs {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+    align-items: center;
+    justify-items: center;
+    margin: 60px 0px;
+}
+.about-boxs .box img {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+/*-------------------End-QUI SOMMES NOUS ----------------*/
+
+/*-------------------solutions-de-conciergerie ----------------*/
+.image-box {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+}
+.image-box img {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    display: block;
+}
+h2.green-title {
+    text-align: center;
+    color: #11696a;
+    text-transform: capitalize;
+    font-size: 28px;
+}
+.services-list,.services-list2 {
+    margin-top: 100px;
+}
+.services-box {
+    display: grid;
+    grid-template-columns: 19% 19% 19% 19% 19%;
+    align-items: center;
+    justify-items: center;
+    gap: 1.3%;
+    row-gap: 5%;
+}
+.services-box div {
+    width: 100%;
+    text-align: center;
+}
+.services-list h2.green-title {
+    margin-bottom: 50px;
+}
+.services-box2 {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 2%;
+    row-gap: 5%;
+    margin-top: 30px;
+}
+.services-box2 div {
+    text-align: center;
+    background: lightgrey;
+    padding: 15px 0px;
+}
+.s-image {
+    height: 130px;
+}
+.s-image img {
+    height: 130px;
+    object-fit: contain;
+}
+.services-list3 img {
+    margin: 0 auto;
+    display: block;
+}
+.withtitle:before {
+    content: '';
+    background: #00000075;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+/*-------------------End-solutions-de-conciergerie ----------------*/
+
+
+/*-------------------HOSPITALITY MANAGEMENT ----------------*/
+.body-content p em {
+    font-size: 18px;
+    line-height: 24px;
+}
+.left-right-bxes {
+    margin-top: 50px;
+}
+.management-box.left-image {
+  grid-template-columns: 36% 60%;
+}
+.management-box.right-image.box2 {
+    grid-template-columns: 60% 36%;
+}
+.left-right-bxes .management-box {
+    align-items: center;
+    display: grid;
+    gap: 4%;
+    justify-content: start;
+}
+.left-right-bxes .management-box .image img {
+    width: 100%;
+}
+.left-right-bxes .management-box .content h2 {
+    color: #11696a;
+}
+.left-right-bxes .management-box .content p {
+    text-align: left;
+}
+/*-------------------End-HOSPITALITY MANAGEMENT ----------------*/
+
+.location-grid {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.logout_form{
+margin-top:20px;
+}
