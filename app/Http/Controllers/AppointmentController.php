@@ -150,10 +150,10 @@ class AppointmentController extends Controller
                 $order_id = $order->id;
 
                 // Charge the customer using Stripe API
-                $stripe_secret_key = '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';
+                $stripe_secret_key = '';
                 \Stripe\Stripe::setApiKey($stripe_secret_key);
             
-                $stripe = new \Stripe\StripeClient('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');
+                $stripe = new \Stripe\StripeClient('');
                 try {
                 
                     $customer = $stripe->customers->create([
